@@ -1,0 +1,33 @@
+/* 
+@layer zoom-sdk {
+  @import "@zoom/videosdk-ui-toolkit/dist/videosdk-ui-toolkit.css";
+}
+
+@layer tailwind {
+  @import "tailwindcss";
+} */
+
+
+#sessionContainer {
+  @import "@zoom/videosdk-ui-toolkit/dist/videosdk-ui-toolkit.css";
+  .bg-theme-surface {
+    color: theme('colors.gray.100');
+    border-color: theme('colors.gray.800');
+    background-color: theme('colors.gray.900');
+  }
+  svg{
+    stroke: theme('colors.gray.100') !important;
+  }
+}
+
+.uikit-footer svg * {
+  stroke: theme('colors.gray.100') !important;
+}
+
+#uikit-footer-participant-size {
+  color: theme('colors.gray.100') !important;
+}
+
+@layer tailwind {
+  @import "tailwindcss";
+}
